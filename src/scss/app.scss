@@ -1,0 +1,16 @@
+body , html {
+	height: 100%;
+}
+$primary: #775273;
+
+
+@mixin quicksand($fontWeight: 400) {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: $fontWeight;
+}
+
+@import "fonts";
+@import "hero";
+@import "episods";
+@import "player";
+@import "loader";

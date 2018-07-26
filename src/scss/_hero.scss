@@ -1,0 +1,29 @@
+.hero-area {
+    background: url(../images/banner.jpeg);
+    background-position: center center;
+    background-size: cover;
+    
+	padding-left: 8%;
+	height: 100vh;
+
+
+	
+	.bg-logo , .radio-logo{
+		font-size: 95px;
+		color: #FFF;
+	}
+
+	.bg-logo{
+		font-family: 'bgFont';
+	}
+
+	.radio-logo{
+		font-family: 'bgFont-soja';
+	}
+
+	.tagline{
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 300;
+	}
+
+}

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+body, html {
+  height: 100%; }
+
+@font-face {
+  font-family: 'bgFont';
+  src: url("../fonts/daggersquare_oblique-webfont.woff2") format("woff2"), url("../fonts/daggersquare_oblique-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bgFont-soja';
+  src: url("../fonts/daggersquare-webfont.woff2") format("woff2"), url("../fonts/daggersquare-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.hero-area {
+  background: url(../images/banner.jpeg);
+  background-position: center center;
+  background-size: cover;
+  padding-left: 8%;
+  height: 100vh; }
+  .hero-area .bg-logo, .hero-area .radio-logo {
+    font-size: 95px;
+    color: #FFF; }
+  .hero-area .bg-logo {
+    font-family: 'bgFont'; }
+  .hero-area .radio-logo {
+    font-family: 'bgFont-soja'; }
+  .hero-area .tagline {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300; }
+
+.section-title {
+  color: #775273;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700; }
+
+.episod {
+  border: 1px dashed #775273;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .episod:hover {
+    transform: background-color 0.5s ease;
+    background-color: #f1f1f1; }
+  .episod .play-icon {
+    color: #775273; }
+    .episod .play-icon i {
+      font-size: 45px; }
+  .episod .episod-info {
+    padding-left: 15px; }
+    .episod .episod-info .episod-no {
+      margin-bottom: 5px;
+      color: #444; }
+    .episod .episod-info .episod-name {
+      font-size: 19px;
+      color: #775273;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 400; }
+    .episod .episod-info .length {
+      margin-bottom: 0;
+      font-size: 14px; }
+
+.player-wrapper {
+  position: absolute;
+  bottom: 15px;
+  left: 0; }
+
+.player {
+  padding: 15px;
+  display: flex;
+  align-items: center; }
+  .player .play-icon {
+    cursor: pointer;
+    margin-bottom: -50px; }
+    .player .play-icon i {
+      font-size: 55px;
+      color: #775273; }
+  .player .player-bar {
+    margin-left: 15px;
+    flex: 1; }
+  .player .audio-name {
+    font-size: 21px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #775273; }
+  .player .audio-progressbar-wrapper {
+    border: 1px solid #775273;
+    height: 20px;
+    border-radius: 25px;
+    position: relative;
+    width: 100%;
+    cursor: pointer; }
+    .player .audio-progressbar-wrapper .audio-progress {
+      position: absolute;
+      height: 12px;
+      background: #775273;
+      border-radius: 15px;
+      top: 3px;
+      left: 3px; }
+  .player .audio-duration {
+    padding-top: 6px;
+    color: #333;
+    font-size: 15px; }
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px; }
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #775273;
+  border-color: #775273 transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite; }
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }

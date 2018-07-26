@@ -1,0 +1,53 @@
+.player-wrapper{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.player{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    .play-icon{
+        i{
+            font-size: 55px;
+            color: $primary;
+        }
+        cursor: pointer;
+        margin-bottom: -50px;
+    }
+
+    .player-bar{
+        margin-left: 15px;
+        flex: 1;
+    }
+    .audio-name{
+        font-size: 21px;
+        @include quicksand(700);
+
+        color: $primary;
+    }
+    
+    .audio-progressbar-wrapper {
+        border: 1px solid $primary;
+        height: 20px;
+        border-radius: 25px;
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+        .audio-progress {
+            position: absolute;
+            height: 12px;
+            background: $primary;
+            border-radius: 15px;
+            top: 3px;
+            left: 3px;
+        }
+    }
+
+    .audio-duration {
+        padding-top: 6px;
+        color: #333;
+        font-size: 15px;
+    }
+}
