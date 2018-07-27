@@ -7,10 +7,7 @@ import LoaderAnimation from './LoaderAnimation'
 export default class App extends Component {
 
     componentDidMount() {
-
-
-
-        axios.get('http://127.0.0.1:8000/api/episods')
+        axios.get('https://api.bikeguybd.com/api/episods')
             .then(({ data: { data: episods } }) => {
                 this.setState({ episods, selectedEpisod: episods[0], loading: false })
 
@@ -19,7 +16,6 @@ export default class App extends Component {
                     const episod_no = parseInt(episod, 10)
                     this.changeEpisod(episod_no)
                 }
-
 
             })
     }
@@ -50,6 +46,7 @@ export default class App extends Component {
                         episods={this.state.episods}
                         changeEpisod={this.changeEpisod}
                         changeRouter={this.changeRouter}
+                        selectedEpisod={this.state.selectedEpisod}
                     /> : <LoaderAnimation />}
             </Fragment>
         )

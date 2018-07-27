@@ -1,7 +1,10 @@
 .player-wrapper{
-    position: absolute;
-    bottom: 15px;
-    left: 0;
+    margin-top: -85px;
+    .container{
+        border-radius: 8px;
+        background: rgba(255,255,255,.5);
+        border: 1px dashed $primary;
+    }
 }
 
 .player{
@@ -26,6 +29,9 @@
         @include quicksand(700);
 
         color: $primary;
+    }
+    .episod-no{
+        margin-bottom: 0;
     }
     
     .audio-progressbar-wrapper {

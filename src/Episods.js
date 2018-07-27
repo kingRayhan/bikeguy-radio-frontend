@@ -8,7 +8,9 @@ export default class Episods extends Component {
             <Fragment>
                 <div className="container pt-5 pb-5">
                     <div className="row">
-                        <h2 className="section-title">Latest Episods</h2>
+                        <div className="col-md-12">
+                            <h2 className="section-title">Latest Episods</h2>
+                        </div>
                     </div>
                 </div>
 
@@ -21,6 +23,7 @@ export default class Episods extends Component {
                             >
                                 <Episod
                                     episod={episod}
+                                    selectedEpisod={this.props.selectedEpisod}
                                     changeRouter={this.props.changeRouter}
                                     changeEpisod={this.props.changeEpisod} />
                             </div>

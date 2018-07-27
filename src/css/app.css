@@ -3,6 +3,10 @@
 body, html {
   height: 100%; }
 
+body {
+  background-image: url(../images/pattern.svg);
+  background-repeat: repeat; }
+
 @font-face {
   font-family: 'bgFont';
   src: url("../fonts/daggersquare_oblique-webfont.woff2") format("woff2"), url("../fonts/daggersquare_oblique-webfont.woff") format("woff");
@@ -21,9 +25,15 @@ body, html {
   background-size: cover;
   padding-left: 8%;
   height: 100vh; }
+  @media screen and (max-width: 768px) {
+    .hero-area {
+      background-position: 65% 0; } }
   .hero-area .bg-logo, .hero-area .radio-logo {
     font-size: 95px;
     color: #FFF; }
+    @media screen and (max-width: 576px) {
+      .hero-area .bg-logo, .hero-area .radio-logo {
+        font-size: 55px; } }
   .hero-area .bg-logo {
     font-family: 'bgFont'; }
   .hero-area .radio-logo {
@@ -31,6 +41,9 @@ body, html {
   .hero-area .tagline {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300; }
+    @media screen and (max-width: 576px) {
+      .hero-area .tagline {
+        font-size: 25px; } }
 
 .section-title {
   color: #775273;
@@ -44,7 +57,8 @@ body, html {
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  background: #FFF; }
   .episod:hover {
     transform: background-color 0.5s ease;
     background-color: #f1f1f1; }
@@ -67,9 +81,11 @@ body, html {
       font-size: 14px; }
 
 .player-wrapper {
-  position: absolute;
-  bottom: 15px;
-  left: 0; }
+  margin-top: -85px; }
+  .player-wrapper .container {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px dashed #775273; }
 
 .player {
   padding: 15px;
@@ -89,6 +105,8 @@ body, html {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     color: #775273; }
+  .player .episod-no {
+    margin-bottom: 0; }
   .player .audio-progressbar-wrapper {
     border: 1px solid #775273;
     height: 20px;

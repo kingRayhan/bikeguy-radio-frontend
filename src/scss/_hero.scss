@@ -6,11 +6,20 @@
 	padding-left: 8%;
 	height: 100vh;
 
+	@media screen and (max-width: 768px)
+	{
+		background-position: 65% 0;
+	}
+
 
 	
 	.bg-logo , .radio-logo{
 		font-size: 95px;
 		color: #FFF;
+		@media screen and (max-width: 576px)
+		{
+			font-size: 55px;
+		}
 	}
 
 	.bg-logo{
@@ -24,6 +33,9 @@
 	.tagline{
 		font-family: 'Quicksand', sans-serif;
 		font-weight: 300;
+		@media screen and (max-width: 576px)
+		{
+			font-size: 25px;
+		}
 	}
-
 }

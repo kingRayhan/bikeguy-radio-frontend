@@ -10,12 +10,21 @@ export default class Episod extends Component {
     render() {
 
         const { topic, episod_no } = this.props.episod
+        let icon = 'play_circle_outline'
+        const player = document.querySelector('#mainAudioPlayer')
+
+        const style = {}
+
+        if (this.props.selectedEpisod.episod_no === episod_no) {
+            icon = 'check_circle'
+            style.backgroundColor = '#f1f1f1'
+        }
 
         return (
             <Fragment>
-                <div className="episod" onClick={this.changeEP}>
+                <div className="episod" onClick={this.changeEP} style={style}>
                     <div className="play-icon">
-                        <i className="material-icons">play_circle_outline</i>
+                        <i className="material-icons">{icon}</i>
                     </div>
                     <div className="episod-info">
                         <p className="episod-no">
