@@ -222,6 +222,7 @@ export default class Player extends React.Component {
                     onTimeUpdate={this.timeUpdate}
                     onLoadedMetadata={this.groupUpdates}
                     src={show.url}
+                    autoPlay
                 />
             </div>
         )
