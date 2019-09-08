@@ -1,7 +1,9 @@
 ---
 title: Podcast Episode Title 3
 episod_no: 3
-description: Summary. Lorem ipsum dolor sit amet.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at sagittis felis. Quisque lacus sapien, consectetur quis nibh nec, dapibus euismod mi. Mauris vel luctus libero.
+thumbnail: https://images.unsplash.com/photo-1551461673-7ead27c20bf1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
+audio: https://res.cloudinary.com/azkeroffer/video/upload/v1566680266/Episods/Baauer_-_Harlem_Shake_Official_Audio.mp3
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at sagittis felis. Quisque lacus sapien, consectetur quis nibh nec, dapibus euismod mi. Mauris vel luctus libero. Donec semper suscipit nibh eu mattis. Donec aliquet lacinia laoreet. Ut gravida hendrerit orci eu hendrerit. Nam vel tristique ex.

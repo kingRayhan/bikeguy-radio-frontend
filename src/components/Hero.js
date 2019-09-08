@@ -1,7 +1,4 @@
-import React, { useContext } from 'react'
-import SyntaxPlayer from './SyntaxPlayer'
-import { AppContext } from '../contexts/AppContextProvider'
-// import Player from './Player'
+import React from 'react'
 
 const Hero = () => {
     return (

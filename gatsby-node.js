@@ -1,4 +1,4 @@
-const path = require('path')
+// const path = require('path')
 
 module.exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
@@ -25,13 +25,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
     })
 }
 
-module.exports.onCreateNode = ({ node, actions }) => {
-    const { createNodeField } = actions
-    if (node.internal.type === 'MarkdownRemark') {
-        createNodeField({
-            node,
-            name: `audio_url`,
-            value: `/episods_audio/${node.frontmatter.episod_no}.mp3`,
-        })
-    }
-}
+// module.exports.onCreateNode = ({ node, actions }) => {
+//     const { createNodeField } = actions
+//     if (node.internal.type === 'MarkdownRemark') {
+//         createNodeField({
+//             node,
+//             name: `audio_url`,
+//             value: `/episods_audio/${node.frontmatter.episod_no}.mp3`,
+//         })
+//     }
+// }

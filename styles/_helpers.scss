@@ -1,0 +1,6 @@
+.font-quicksand {
+    @include quicksand;
+}
+.text-primary {
+    color: $primary !important;
+}

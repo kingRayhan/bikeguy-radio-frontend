@@ -13,9 +13,6 @@ const Episods = () => {
                         title
                         description
                     }
-                    fields {
-                        audio_url
-                    }
                 }
             }
         }

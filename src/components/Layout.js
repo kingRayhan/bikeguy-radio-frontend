@@ -1,25 +1,6 @@
-import React, { useContext } from 'react'
-import { AppContext } from '../contexts/AppContextProvider'
-import SyntaxPlayer from './SyntaxPlayer'
-
+import React from 'react'
 const Layout = ({ children }) => {
-    let { episod } = useContext(AppContext)
-
-    if (episod.title) {
-        var show = {
-            number: episod.episod_no,
-            displayNumber: episod.episod_no,
-            title: episod.title,
-            url: episod.audio_url,
-        }
-    }
-
-    return (
-        <>
-            {children}
-            {episod.title && <SyntaxPlayer show={show} />}
-        </>
-    )
+    return <>{children}</>
 }
 
 export default Layout

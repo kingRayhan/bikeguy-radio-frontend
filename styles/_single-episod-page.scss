@@ -1,0 +1,6 @@
+.episod-contents {
+    @include shadow;
+    border-radius: $border-radius;
+    background-color: $white;
+    padding: 15px 35px;
+}

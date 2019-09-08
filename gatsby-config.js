@@ -3,6 +3,7 @@ module.exports = {
         `gatsby-plugin-sass`,
         `gatsby-plugin-stylus`,
         `gatsby-transformer-remark`,
+        `gatsby-plugin-transition-link`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
